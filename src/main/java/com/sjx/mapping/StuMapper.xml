@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    映射文件 根元素节点
+    namespace: 用于绑定Dao接口，即面向接口编程
+    好处: 当使用了namespace之后，就可以不用编写接口的实现类
+          业务逻辑会直接通过这个绑定找到相应的SQL语句进行处理
+-->
+<mapper namespace="com.sjx.dao.StuMapper">
+    <select id="count" resultType="int">
+        select count(*) from user
+    </select>
+
+</mapper>
